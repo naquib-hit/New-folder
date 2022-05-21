@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\SalesDetails;
 use Illuminate\Database\Seeder;
 
 class SalesDetailsSeeder extends Seeder
@@ -14,5 +15,6 @@ class SalesDetailsSeeder extends Seeder
     public function run()
     {
         //
+        SalesDetails::factory(14)->create();
     }
 }

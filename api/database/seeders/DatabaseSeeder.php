@@ -2,9 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\SalesDetails;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,9 +14,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-        //DB::table('user')->crea
         $this->call([
             UserSeeder::class,
+            CarSeeder::class,
             SalesDetailsSeeder::class
         ]);
     }
