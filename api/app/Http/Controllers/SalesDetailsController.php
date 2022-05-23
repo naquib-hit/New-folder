@@ -189,7 +189,8 @@ class SalesDetailsController extends Controller
                 $enp[] = $newArr;
            }
        }
-
+		
+		unset($coll);
         return response()->json($enp, 200);   
     }
 
